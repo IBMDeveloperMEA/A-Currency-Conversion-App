@@ -3,9 +3,10 @@ from urllib.error import HTTPError  # noqa: 401
 import json
 import logging
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG)
 
-BASE_URL_ENDPOINT = "https://api.exchangeratesapi.io/"
+BASE_URL_ENDPOINT = "http://data.fixer.io/api/"
 HEADERS = {
     "Accept": "application/json",
     "Content-Type": "application/json",
@@ -29,7 +30,7 @@ def __callExtRestEndPoint(url):
 
 def getCurrencyExchangeRates(timeIndicator="latest"):
     currencyUrl = "{}{}".format(BASE_URL_ENDPOINT, timeIndicator)
-    data = __callExtRestEndPoint(currencyUrl)
+    data = __callExtRestEndPoint(currencyUrl + "?access_key=dc058dc915aa4846e04c749d3567fe9c")
     return data
 
 
@@ -40,10 +41,14 @@ def getCurrencyExchangeRate(
     countryCurrencyCode = countryCurrencyCode.upper()
     baseCode = baseCode.upper()
 
-    currencyUrl = "{}{}?base={}".format(BASE_URL_ENDPOINT, timeIndicator, baseCode)
-    data = __callExtRestEndPoint(currencyUrl)
+    currencyUrl = "{}{}?symbols={}".format(BASE_URL_ENDPOINT, timeIndicator, baseCode)
+    data = __callExtRestEndPoint(currencyUrl + "&access_key=dc058dc915aa4846e04c749d3567fe9c")
+    logging.debug("URL = " + currencyUrl + "&access_key=dc058dc915aa4846e04c749d3567fe9c")
+    logging.debug("data = " + json.dumps(data))
+    logging.debug("countryCurrencyCode = " + countryCurrencyCode)
+    logging.debug("baseCode = " + baseCode)
 
-    return data["rates"][countryCurrencyCode]
+    return data["rates"][baseCode]
 
 
 def convertCurrency(
