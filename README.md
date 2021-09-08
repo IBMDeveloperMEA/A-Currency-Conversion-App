@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/IBM/python-ubi-openshift.svg?branch=development)](https://travis-ci.com/IBM/python-ubi-openshift)
 
-#  A currency conversion app with Red Hat OpenShift Universal Base Image 
+#  A currency conversion app with Red Hat OpenShift UBI 
 
 This is a repo for the upcoming webinar - "A currency conversion app with Red Hat OpenShift Universal Base Image" [Webinar Link + Replay]( https://www.crowdcast.io/e/fxUBIOpenShift )
 
