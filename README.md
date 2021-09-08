@@ -1,14 +1,13 @@
 [![Build Status](https://travis-ci.com/IBM/python-ubi-openshift.svg?branch=development)](https://travis-ci.com/IBM/python-ubi-openshift)
 
-#  Deploy an application to OpenShift 4 using Red Hat Universal Base Image (UBI)
+#  A currency conversion app with Red Hat OpenShift Universal Base Image 
 
-This code pattern is part of the [Bee Travels project](https://github.com/bee-travels) that focuses on deploying a Python currency exchange application to OpenShift 4 using UBI
+This is a repo for the upcoming webinar - "A currency conversion app with Red Hat OpenShift Universal Base Image" [Webinar Link + Replay]( https://www.crowdcast.io/e/fxUBIOpenShift )
 
 
-## After following this code pattern, you will understand how to:
+## After the handson, you will understand how to:
 
 * Design and create a Python microservice with a REST interface that has a swagger test harness where you can manually inspect, discover, and run the various API endpoints.
-
 * Build a docker image of this microservice using the UBI
 * Deploy and run this microservice on OpenShift version 4
 
@@ -48,21 +47,26 @@ This is the flow of the currency conversion microservice.
 You need to have the following installed to complete the steps in this code pattern:
 
 * [Docker](https://www.docker.com/products/docker-desktop)
-* [IBM Cloud Account](https://cloud.ibm.com/registration)
-* [IBM RedHat OpenShift 4.3 Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster)
+* [IBM Cloud Account](https://ibm.biz/Bdfp4G)
+* [IBM RedHat OpenShift 4.3 Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster) - Please follow instructions given in webinar to provision a free cluster, this option will only be available for 24 hours after the webinar ends.
 * OpenShift CLI tool [oc](https://cloud.ibm.com/docs/openshift?topic=openshift-openshift-cli#cli_oc)
 
 # Steps 
 
 Follow these steps to set up and run this code pattern locally and on the cloud. The steps are described in detail below.
 
-1. [Clone the GitHub repository locally](#1-clone-the-GitHub-repository-locally)
+1. [Create or Sign in to your IBM Cloud Account] ( https://ibm.biz/Bdfp4G)
 
-2. [Build a docker image and run it locally](#2-build-and-run-a-docker-image-locally)
+2. [Clone the GitHub repository locally](#1-clone-the-GitHub-repository-locally)
 
-3. [Deploy to IBM RedHat OpenShift 4 Cluster](#3-deploy-to-openshift-4-cluster)
+3. [Build a docker image and run it locally](#2-build-and-run-a-docker-image-locally)
 
-### 1. Clone the GitHub repository locally
+4. [Deploy to IBM RedHat OpenShift 4 Cluster](#3-deploy-to-openshift-4-cluster)
+
+### 1. Sign in to IBM Cloud
+Follow the link - https://ibm.biz/Bdfp4G to sign up for a new IBM Cloud Account or sign in to your IBM Cloud Account.
+
+### 2. Clone the GitHub repository locally
 
 Clone the `currencyexchange` GitHub repository locally.
 
@@ -75,7 +79,7 @@ cd python-ubi-openshift
 ```
 
 
-### 2. Build and run a docker image locally
+### 3. Build and run a docker image locally
 
 We showcase this method, by using the UBI.
 
@@ -340,7 +344,8 @@ Here you can monitor your `currency exchange microservice` cluster.  See and adu
 
 You have now successfully created a Python Flask microservice container image, using the UBI, and optionally deployed it to a Red Hat OpenShift 4 cluster on the IBM Cloud.
 
-
+### Next Steps: 
+ Please visit the [Bee Travels Project](https://github.com/bee-travels)
 
 
 
