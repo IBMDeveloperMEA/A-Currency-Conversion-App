@@ -345,24 +345,7 @@ Here you can monitor your `currency exchange microservice` cluster.  See and adu
 You have now successfully created a Python Flask microservice container image, using the UBI, and optionally deployed it to a Red Hat OpenShift 4 cluster on the IBM Cloud.
 
 ### Next Steps: 
- Please visit the [Bee Travels Project](https://github.com/bee-travels)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ Please visit the [Bee Travels Project](https://github.com/bee-travels), try out the other examples in the series.
 
 
 
