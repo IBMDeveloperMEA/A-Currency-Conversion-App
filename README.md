@@ -55,13 +55,13 @@ You need to have the following installed to complete the steps in this code patt
 
 Follow these steps to set up and run this code pattern locally and on the cloud. The steps are described in detail below.
 
-1. [Create or Sign in to your IBM Cloud Account] ( https://ibm.biz/Bdfp4G)
+1. [Create or Sign in to your IBM Cloud Account] (#1- https://ibm.biz/Bdfp4G)
 
-2. [Clone the GitHub repository locally](#1-clone-the-GitHub-repository-locally)
+2. [Clone the GitHub repository locally](#2-clone-the-GitHub-repository-locally)
 
-3. [Build a docker image and run it locally](#2-build-and-run-a-docker-image-locally)
+3. [Build a docker image and run it locally](#3-build-and-run-a-docker-image-locally)
 
-4. [Deploy to IBM RedHat OpenShift 4 Cluster](#3-deploy-to-openshift-4-cluster)
+4. [Deploy to IBM RedHat OpenShift 4 Cluster](#4-deploy-to-openshift-4-cluster)
 
 ### 1. Sign in to IBM Cloud
 Follow the link - https://ibm.biz/Bdfp4G to sign up for a new IBM Cloud Account or sign in to your IBM Cloud Account.
