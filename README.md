@@ -73,7 +73,7 @@ Clone the `currencyexchange` GitHub repository locally.
 In a terminal, run the following:
 
 ```bash
-git clone https://github.com/IBM/python-ubi-openshift.git
+git clone https://github.com/1154046/A-currency-conversion-app
 
 cd python-ubi-openshift
 ```
