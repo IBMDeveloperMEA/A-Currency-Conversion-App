@@ -55,7 +55,7 @@ You need to have the following installed to complete the steps in this code patt
 
 Follow these steps to set up and run this code pattern locally and on the cloud. The steps are described in detail below.
 
-1. [Create or Sign in to your IBM Cloud Account] (#1- https://ibm.biz/Bdfp4G)
+1. [Create or Sign in to your IBM Cloud Account] (#1-sign-in-to-ibm-cloud)
 
 2. [Clone the GitHub repository locally](#2-clone-the-GitHub-repository-locally)
 
